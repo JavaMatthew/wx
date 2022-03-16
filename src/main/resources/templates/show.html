@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style type="text/css">
+    .tdWord{
+        border:2px dashed #b4b4b4;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .leftTable{
+        width: 32%;
+    }
+</style>
+<div style="top:9%;left: 50%;position: absolute;transform: translate(-50%,0);">
+    <div style="width: 700px; margin-bottom: 40px;font-weight: bolder;font-size: 40px;text-align: center;">已扫描到以下内容</div>
+    <table style="width: 700px;border-collapse: collapse;font-weight: bolder;font-size: 30px;">
+        <tr>
+            <td class="tdWord leftTable">公证处名称</td>
+            <td class="tdWord">辽宁省公证处</td>
+        </tr>
+        <tr>
+            <td class="tdWord">受理日期</td>
+            <td class="tdWord" th:text="${info.getAcceptDate()}"></td>
+        </tr>
+        <tr>
+            <td class="tdWord">公正类型</td>
+            <td class="tdWord">国内民事</td>
+        </tr>
+        <tr>
+            <td class="tdWord">公证员姓名</td>
+            <td class="tdWord" th:text="${info.getName()}"></td>
+        </tr>
+        <tr>
+            <td class="tdWord">卷宗号</td>
+            <td class="tdWord" th:text="${info.getDossier()}"></td>
+        </tr>
+        <tr>
+            <td class="tdWord">公证书编号</td>
+            <td class="tdWord" th:text="${info.getNumber()}"></td>
+        </tr>
+        <tr>
+            <td class="tdWord">公证书事项</td>
+            <td class="tdWord">英文翻译</td>
+        </tr>
+        <tr>
+            <td class="tdWord">使用地</td>
+            <td class="tdWord">中国大陆</td>
+        </tr>
+        <tr>
+            <td class="tdWord">申请人</td>
+            <td class="tdWord" th:text="${info.getApplicant()}"></td>
+        </tr>
+    </table>
+    <div style="margin-left: 30px; width: 650px;font-weight: bolder;font-size: 40px;margin-top: 40px;line-height: 70px;">扫描所得内容并非微信提供，请谨慎使用！如需使用，可通过复制操作获取内容</div>
+</div>
+</body>
+</html>

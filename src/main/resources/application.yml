@@ -1,0 +1,13 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: wx
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://coder.53site.com:3306/werewolf_overseas?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&cachePrepStmts=true&prepStmtCacheSize=256&prepStmtCacheSqlLimit=2048&useServerPrepStmts=true&useLocalSessionState=true&rewriteBatchedStatements=true&cacheResultSetMetadata=true&cacheServerConfiguration=true&elideSetAutoCommits=true&maintainTimeStats=false&zeroDateTimeBehavior=convertToNull
+#    username: admin
+#    password: Mangosteen0!
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
